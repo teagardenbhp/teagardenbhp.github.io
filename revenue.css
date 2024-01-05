@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .revenue-container {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .date {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    margin-left: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #revenueData {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .item p {
+    margin: 0;
+  }
+  
+  #totalRevenue {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .dates{
+    margin: 10px;
+  }

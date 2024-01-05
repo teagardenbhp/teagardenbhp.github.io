@@ -1,0 +1,334 @@
+.item-card h2 {
+  overflow: hidden;
+  margin: 0;
+  padding: 0px;
+  word-wrap: break-word;
+}
+
+h2{
+  margin: -5px 0px 5px 0px;
+  text-align: center;
+}
+h1{
+text-align: center;
+}
+#total{
+  margin: 5px;
+  margin-bottom: -5px;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.heading {
+  margin: 0%;
+  padding: 10px;
+  background-color: #45a049;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.menu {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 5%;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 70%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.quantity-button {
+  background-color: #81b895a1;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  color: black;
+  font-size: large;
+}
+
+.quantity-display {
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+.divide {
+  width: 35%;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  margin: 10px 0px 0px 0px;
+  padding: 8px 22px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.cart-container {
+  width: 25%;
+  height: fit-content;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  text-align: left;
+  position: fixed;
+  top: 13.7%;
+  right: 5%;
+}
+
+.cart {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+#cart-list {
+  max-height: 150px;
+  overflow: auto;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: xx-small;
+}
+
+h3{
+  margin: 5px 0px 10px 0px;
+  text-align: center;
+}
+
+#tableNumber{
+  width: 10%;
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+tbody{
+  color: #00a506;
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.extra{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 60%;
+  right: 9%;
+  width: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.item-price{
+font-size: large;
+font-weight: 500;
+padding: 0%;
+margin: 5px;
+}
+
+.item-name{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.extra-price{
+  width: 50%;
+  font-size: 18px;
+}
+
+.extra-pricee{
+  margin-top: 10px;
+}
+
+.extra-btn{
+  text-align: center;
+  margin-top: -4px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.item-card {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: 100%;
+}
+
+/* Additional styles for better presentation */
+.quantity-container {
+display: flex;
+align-items: center;
+}
+
+.item-card button {
+margin-top: 10px; /* Add some space between the quantity container and the "Add" button */
+}
+
+.navbar {
+background-color:#45a049;
+display: flex;
+overflow: hidden;
+margin: 0%;
+}
+
+.navbar ul {
+list-style-type: none;
+margin: 0;
+margin-left: 10%;
+padding: 0;
+overflow: hidden;
+}
+
+.navbar li {
+float: left;
+}
+
+.navbar a {
+display: block;
+color: white;
+text-align: center;
+padding: 5px 13px;
+text-decoration: none;
+margin-left: 5px;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.navbar a.active {
+background-color: #001b0188;
+
+color: white;
+}
+
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.nav{
+width: 100%;
+position: fixed;
+
+}
+
+
+.tables{
+margin: 0px;
+padding: opx;
+position: absolute;
+position: fixed;
+right: 10%;
+}
+
+.number{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.number button{
+margin: 4px;
+padding: 0px;
+text-decoration: none;
+color: #fff;
+background-color: #45a049;
+border-radius: 4px;
+width: 35px;
+height: 35px;
+font-size: large;
+}
+
+
+.number button:hover{
+background-color: #ddd;
+color: black;
+}
+
+.flex{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.table-container{
+  align-items: center;
+  text-align: center;
+}
+
+.table-cart{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.table-cart-table{
+  background-color: #fff;
+  padding: 10px 50px;
+  border: 1px solid #ccc;
+}
+.delete-button{
+  padding: 0px 3px;
+  margin-top: -5%;
+}

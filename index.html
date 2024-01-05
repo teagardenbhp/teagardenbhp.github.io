@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tea Garden</title>
+</head>
+<body>
+  <div class="nav">
+    <h2 class="heading">Tea Garden Menu</h2>
+    <div class="navbar">
+      <ul>
+        <li><a href="#" onclick="showCategory('All')">All</a></li>
+        <li><a href="#" onclick="showCategory('Tea')">Tea</a></li>
+        <li><a href="#" onclick="showCategory('Pratha')">Pratha</a></li>
+        <li><a href="#" onclick="showCategory('Burger')">Burger</a></li>
+        <li><a href="#" onclick="showCategory('Fried')">Fried</a></li>
+        <li><a href="#" onclick="showCategory('PrathaRoll')">Pratha Roll</a></li>
+        <li><a href="#" onclick="showCategory('Drinks')">Drinks</a></li>
+        <li><a href="#" onclick="showCategory('BBQ')">BBQ</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tables">
+    <ul class="number">
+        <div class="flex">
+            <li><button onclick="buttonClick(1)" data-table="1">1</button></li>
+            <li><button onclick="buttonClick(2)" data-table="2">2</button></li>
+            <li><button onclick="buttonClick(3)" data-table="3">3</button></li>
+            <li><button onclick="buttonClick(4)" data-table="4">4</button></li>
+            <li><button onclick="buttonClick(5)" data-table="5">5</button></li>
+            <li><button onclick="buttonClick(6)" data-table="6">6</button></li>
+            <li><button onclick="buttonClick(7)" data-table="7">7</button></li>
+            <li><button onclick="buttonClick(8)" data-table="8">8</button></li>
+            <li><button onclick="buttonClick(9)" data-table="9">9</button></li>
+            <li><button onclick="buttonClick(10)" data-table="10">10</button></li>
+        </div>
+        <div class="flex">
+            <li><button onclick="buttonClick(11)" data-table="11">11</button></li>
+            <li><button onclick="buttonClick(12)" data-table="12">12</button></li>
+            <li><button onclick="buttonClick(13)" data-table="13">13</button></li>
+            <li><button onclick="buttonClick(14)" data-table="14">14</button></li>
+            <li><button onclick="buttonClick(15)" data-table="15">15</button></li>
+            <li><button onclick="buttonClick(16)" data-table="16">16</button></li>
+            <li><button onclick="buttonClick(17)" data-table="17">17</button></li>
+            <li><button onclick="buttonClick(18)" data-table="18">18</button></li>
+            <li><button onclick="buttonClick(19)" data-table="19">19</button></li>
+            <li><button onclick="buttonClick(20)" data-table="20">20</button></li>
+        </div>
+    </ul>
+</div>
+
+
+  <div class="container">
+    <div class="menu" id="menu">
+
+    </div>
+
+    <div class="divide"></div>
+
+    <div class="cart-container" id="cartContainer">
+      <h2>Bill</h2>
+      <div class="cart">
+        <table id="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="cart-list">
+          </tbody>
+        </table>
+      </div>
+      <p id="total">Total: 0.00</p>
+      <div>
+        <label for="tableNumber">Table Number:</label>
+        <input type="text" id="tableNumber" />
+      </div>
+      <button id="addItemButton" onclick="addItemToTableOrder()">Add Item</button>
+    </div>
+
+        <div class="extra">
+            <h3>Add Extra Item</h3>
+            <label for="extraItemName">Item Name:</label>
+            <input class="item-name" type="text" id="extraItemName" value="Extra" onclick="clearInputField(this)">
+        
+            <div class="quantity-container">
+                <button class="quantity-button" onclick="changeQuantity('quantity0', -1)">-</button>
+                <h5 id="quantity0" class="quantity-display">1</h5>
+                <button class="quantity-button" onclick="changeQuantity('quantity0', 1)">+</button>
+            </div>
+        
+            <label for="extraItemPrice" class="extra-pricee">Price:<small><i>(Per Item)</i></small></label>
+            <input type="text" class="extra-price" id="extraItemPrice">
+            <br>
+            <button class="extra-btn" onclick="addExtraItem()">Add to Bill</button>
+        </div>
+
+    </div>
+    <div class="table-orders" id="tableOrders">
+      <h2>Table Orders</h2>
+      <div class="table-container" id="table-container">
+        <h1 class="table-tableNumber" id="table-tableNumber"></h1>
+      <div class="table-bill">
+        <div class="table-cart">
+          <table class="table-cart-table" id="table-cart-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="table-list">
+            </tbody>
+          </table>
+        </div>
+        <p id="table-total">Total: 0.00</p>
+      </div>
+        <button id="addItemButton" onclick="printReceipt()">Print Bill</button>
+      </div>
+    </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
